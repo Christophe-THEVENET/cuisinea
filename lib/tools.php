@@ -1,10 +1,12 @@
 <?php
 
-function linesToArray(string $string) {
-    return explode(PHP_EOL, $string);
+function linesToArray(string $string)
+{
+  return explode(PHP_EOL, $string);
 }
 
-
+// ---------------------------------------- clean le nom des images téléchargées (enleve majuscule, espace, accent, etc...)
+// fonction trouvée sur internet
 function slugify($text, string $divider = '-')
 {
   // replace non letter or digits by divider
